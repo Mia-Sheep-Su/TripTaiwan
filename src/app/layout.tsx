@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
-const siteUrl = "https://mia-sheep-su.github.io/PromotionsSales/";
+const siteUrl = "https://triptaiwan.mia-and-max.com/";
 
 export const metadata: Metadata = {
   title: 'Tour Guide Taiwan',
