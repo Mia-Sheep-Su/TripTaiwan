@@ -1,0 +1,149 @@
+{
+  "name": "Lanyu Tour",
+  "theme": "lanyu",
+  "keyVisuals": [
+    {
+      "url": "/1024x768 (1).jpg",
+      "hint": "Lanyu plank canoe",
+      "name": "Lanyu plank canoe"
+    },
+    {
+      "url": "/668954_0.jpg",
+      "hint": "lanyu island",
+      "name": "Twin Lions Rock"
+    },
+    {
+      "url": "/istockphoto-1217708951-1024x1024.jpg",
+      "hint": "flying fish",
+      "name": "Flying Fish"
+    }
+  ],
+  "map": {
+    "image": "/蘭嶼地圖.png",
+    "hint": "lanyu map"
+  },
+  "pois": [
+    {
+      "name": "Dongqing Bay",
+      "position": {
+        "top": "40%",
+        "left": "55%"
+      },
+      "linkToDay": 3,
+      "targetImageIndex": 0
+    },
+    {
+      "name": "Lanyu Lighthouse",
+      "position": {
+        "top": "31%",
+        "left": "30%"
+      },
+      "linkToDay": 1,
+      "targetImageIndex": 2
+    },
+    {
+      "name": "Yeyin Cold Spring",
+      "position": {
+        "top": "60%",
+        "left": "65%"
+      },
+      "linkToDay": 2,
+      "targetImageIndex": 1
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Orchid Island Arrival",
+      "subtitle": "Coastal Drives and Tao Culture",
+      "activities": [
+        {
+          "name": "🛵 Coastal Scooter Ride",
+          "description": "Fly to Lanyu, rent a scooter, and explore the stunning coastal road that circles the island, offering breathtaking ocean views.",
+          "image": {
+            "url": "/kDKXWu-Q.jpeg",
+            "hint": "island scooter"
+          }
+        },
+        {
+          "name": "🏠 Traditional Tao Village",
+          "description": "Visit a traditional Tao village and learn about the indigenous culture and their unique, semi-subterranean houses designed to withstand typhoons.",
+          "image": {
+            "url": "/22-18-03_1140.jpg",
+            "hint": "lanyu village"
+          }
+        },
+        {
+          "name": "🐐 Lanyu Lighthouse & Goats",
+          "description": "Hike up to the Lanyu Lighthouse for panoramic views and encounter the many goats that roam freely across the island's hills.",
+          "image": {
+            "url": "/goats.jpg",
+            "hint": "lanyu goats"
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Ocean Wonders",
+      "subtitle": "Snorkeling and Natural Pools",
+      "activities": [
+        {
+          "name": "🐠 Snorkeling Adventure",
+          "description": "Discover Lanyu's vibrant underwater world by snorkeling or diving in its crystal-clear waters, home to diverse coral reefs and marine life.",
+          "image": {
+            "url": "/668957_0.jpg",
+            "hint": "coral reef"
+          }
+        },
+        {
+          "name": "💧 Yeyin Cold Spring",
+          "description": "Cool off in the refreshing Yeyin Cold Spring, a natural seaside pool where fresh and salt water meet, perfect for a relaxing afternoon.",
+          "image": {
+            "url": "/1024x768 (2).jpg",
+            "hint": "natural spring"
+          }
+        },
+        {
+          "name": "🪨 Weather-Worn Rocks",
+          "description": "Explore the island's unique geological formations, such as 'Dragon Head Rock' and 'Twin Lions Rock', sculpted by wind and sea.",
+          "image": {
+            "url": "/2022070509293253.jpg",
+            "hint": "lanyu rock formation"
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Sunrise and Traditional Boats",
+      "subtitle": "Dawn at Dongqing Bay and Tao Canoes",
+      "activities": [
+        {
+          "name": "🌅 Dongqing Bay Sunrise",
+          "description": "Wake up early to catch the spectacular sunrise at Dongqing Bay, where the sun first rises over Taiwan.",
+          "image": {
+            "url": "/42730293402_cf3ff5c6d1_b.jpg",
+            "hint": "lanyu sunrise"
+          }
+        },
+        {
+          "name": "🛶 Tao Canoes (Tatala)",
+          "description": "Admire the beautifully handcrafted Tao canoes (Tatala), a symbol of the island's fishing culture and heritage, resting on the beach.",
+          "image": {
+            "url": "/Tao-Tatala-750x502.jpg",
+            "hint": "tao canoe"
+          }
+        },
+        {
+          "name": "🍠 Local Taro Ice",
+          "description": "Enjoy a local delicacy, taro ice cream or a taro-based dessert, a sweet and refreshing treat unique to the island.",
+          "image": {
+            "url": "/DSC0647.jpg",
+            "hint": "taro ice"
+          }
+        }
+      ]
+    }
+  ]
+}
