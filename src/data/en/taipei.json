@@ -1,0 +1,149 @@
+{
+  "name": "Taipei Tour",
+  "theme": "taipei",
+  "keyVisuals": [
+    {
+      "url": "/pexels-timo-volz-837240-1717859.jpg",
+      "hint": "taipei 101",
+      "name": "Taipei 101"
+    },
+    {
+      "url": "/pexels-joey-lu-49400-208901.jpg",
+      "hint": "taipei city",
+      "name": "Taipei Station Street"
+    },
+    {
+      "url": "/pic_154_14.jpg",
+      "hint": "night market",
+      "name": "Shilin Night Market"
+    }
+  ],
+  "map": {
+    "image": "/台北地圖.png",
+    "hint": "taipei map"
+  },
+  "pois": [
+    {
+      "name": "Taipei 101",
+      "position": {
+        "top": "60%",
+        "left": "48%"
+      },
+      "linkToDay": 1,
+      "targetImageIndex": 0
+    },
+    {
+      "name": "Chiang Kai-shek Memorial Hall",
+      "position": {
+        "top": "51%",
+        "left": "35%"
+      },
+      "linkToDay": 1,
+      "targetImageIndex": 1
+    },
+    {
+      "name": "National Palace Museum",
+      "position": {
+        "top": "30%",
+        "left": "53%"
+      },
+      "linkToDay": 2,
+      "targetImageIndex": 0
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "City Exploration",
+      "subtitle": "Modern Marvels and Historical Roots",
+      "activities": [
+        {
+          "name": "🏛 Taipei 101",
+          "description": "Begin your Taipei adventure by visiting the iconic Taipei 101, once the world's tallest building. Ascend to the observatory for breathtaking panoramic views.",
+          "image": {
+            "url": "/pexels-timo-volz-837240-1717859.jpg",
+            "hint": "taipei building"
+          }
+        },
+        {
+          "name": "🏛 Chiang Kai-shek Memorial Hall",
+          "description": "Immerse yourself in history at the Chiang Kai-shek Memorial Hall, a classic Taipei landmark with majestic architecture and the hourly changing of the guard ceremony.",
+          "image": {
+            "url": "/pexels-hayden-lee-724228642-30014250.jpg",
+            "hint": "memorial hall"
+          }
+        },
+        {
+          "name": "🌇 Ximending",
+          "description": "Explore the vibrant and youthful Ximending district, filled with shops, street food, and entertainment, perfect for experiencing Taipei's modern culture.",
+          "image": {
+            "url": "/istockphoto-1972184475-1024x1024.jpg",
+            "hint": "taipei shopping district"
+          }
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Culture and Cuisine",
+      "subtitle": "Artistic Wonders and Night Market Feasts",
+      "activities": [
+        {
+          "name": "🖼 National Palace Museum",
+          "description": "Explore the vast collection of Chinese imperial artifacts at the National Palace Museum, showcasing centuries of history and art.",
+          "image": {
+            "url": "/1920x1080_attractions-image-hrvtkvaowueb7-w8--qy9g.jpg",
+            "hint": "museum artifacts"
+          }
+        },
+        {
+          "name": "🛍 Shilin Night Market",
+          "description": "As evening falls, dive into the bustling atmosphere of Shilin Night Market, sampling a variety of delicious Taiwanese street food.",
+          "image": {
+            "url": "/pic_154_14.jpg",
+            "hint": "street food"
+          }
+        },
+        {
+          "name": "🌳 Yangmingshan National Park",
+          "description": "Escape the city and enjoy nature in Yangmingshan National Park, famous for its hot springs, sulfur deposits, and beautiful flower seasons.",
+          "image": {
+            "url": "/pexels-ming-chin-hsieh-653355741-31775428.jpg",
+            "hint": "yangmingshan park"
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Day Trip to Jiufen & Shifen",
+      "subtitle": "Charming Old Streets and Sky Lanterns",
+      "activities": [
+        {
+          "name": "🏮 Jiufen Old Street",
+          "description": "Take a day trip to the charming hillside village of Jiufen, known for its narrow alleyways, teahouses, and nostalgic atmosphere.",
+          "image": {
+            "url": "/1024x768_attractions-image-x_d23esh1ksgpw72a6rfkw.jpg",
+            "hint": "jiufen teahouse"
+          }
+        },
+        {
+          "name": "✨ Shifen Old Street",
+          "description": "Visit Shifen to release a sky lantern with your wishes written on it, a truly magical experience along the old railway tracks.",
+          "image": {
+            "url": "/b0.jpg",
+            "hint": "sky lantern"
+          }
+        },
+        {
+          "name": "🌊 Shifen Waterfall",
+          "description": "Marvel at the 'Little Niagara of Taiwan', the widest waterfall in the country, located just a short walk from Shifen Old Street.",
+          "image": {
+            "url": "/1920x1080_attractions-image-0sruq-lu0kspcqx7mcds0a.jpg",
+            "hint": "shifen waterfall"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -4,8 +4,13 @@ import { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { i18n, type Language } from "@/lib/i18n";
 
-export function FloatingReturnButton() {
+type FloatingReturnButtonProps = {
+  lang: Language;
+};
+
+export function FloatingReturnButton({ lang }: FloatingReturnButtonProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -41,11 +46,11 @@ export function FloatingReturnButton() {
         "fixed bottom-8 right-8 h-12 w-12 rounded-full shadow-none transition-opacity duration-300 z-50",
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       )}
-      aria-label="Scroll to map"
+      aria-label={i18n[lang].scrollToMap}
     >
       <div className="flex flex-col items-center">
         <ArrowUp className="h-6 w-6 md:h-8 md:w-8" />
-        <p>MAP</p>
+        <p>{i18n[lang].map}</p>
       </div>
     </Button>
   );

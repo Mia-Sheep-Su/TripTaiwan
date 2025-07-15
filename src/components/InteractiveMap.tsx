@@ -9,6 +9,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import type { CarouselApi } from "@/components/ui/carousel";
+import { i18n, type Language } from "@/lib/i18n";
 
 type InteractiveMapProps = {
   mapImage: string;
@@ -16,19 +17,21 @@ type InteractiveMapProps = {
   pois: POI[];
   theme: string;
   carouselRefs: React.MutableRefObject<CarouselApi[]>;
+  lang: Language;
 };
 
-export function InteractiveMap({ mapImage, mapImageHint, pois, theme, carouselRefs }: InteractiveMapProps) {
+export function InteractiveMap({ mapImage, mapImageHint, pois, theme, carouselRefs, lang }: InteractiveMapProps) {
   const PinIcon = theme === 'taipei' ? TaipeiPinIcon : LanyuPinIcon;
 
   return (
     <div id="map-section" className="container my-8">
-      <h2 className="text-3xl font-bold text-center mb-6 font-headline">Points of Interest</h2>
+      <h2 className="text-3xl font-bold text-center mb-6 font-headline">{i18n[lang].pointsOfInterest}</h2>
       <div className="relative w-full aspect-[4/3] md:aspect-[5/3] overflow-visible bg-transparent">
         <Image
           src={mapImage}
           alt="Map of the tour area"
           fill
+          unoptimized
           className="object-contain"
           style={{ backgroundColor: "transparent" }}
           data-ai-hint={mapImageHint}

@@ -9,14 +9,14 @@ import { DailyItineraryCard } from "@/components/DailyItineraryCard";
 import { FloatingReturnButton } from "@/components/FloatingReturnButton";
 import { Separator } from "@/components/ui/separator";
 import type { CarouselApi } from "@/components/ui/carousel";
+import { i18n } from "@/lib/i18n";
 
 type ClientPageProps = {
-  allTours: {
-    [key: string]: TourData;
-  };
-};
+  allTours: { [key: string]: TourData };
+  lang: 'zh' | 'en';
+}
 
-export function ClientPage({ allTours }: ClientPageProps) {
+export function ClientPage({ allTours, lang }: ClientPageProps) {
   const [activeTourKey, setActiveTourKey] = useState<string>("taipei");
   const carouselRefs = useRef<CarouselApi[]>([]);
 
@@ -50,17 +50,18 @@ export function ClientPage({ allTours }: ClientPageProps) {
           pois={activeTourData.pois}
           theme={activeTourData.theme}
           carouselRefs={carouselRefs}
+          lang={lang}
         />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h2 className="text-3xl font-bold text-center mb-6 font-headline">Daily Itinerary</h2>
+          <h2 className="text-3xl font-bold text-center mb-6 font-headline">{i18n[lang].dailyItinerary}</h2>
           <Separator className="my-4 bg-border/50" />
           {activeTourData.itinerary.map((item, index) => (
             <DailyItineraryCard key={item.day} item={item} index={index} setCarouselApi={(api) => (carouselRefs.current[index] = api)} />
           ))}
         </div>
       </main>
-      <FloatingReturnButton />
+      <FloatingReturnButton lang={lang} />
     </div>
   );
 }
